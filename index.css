@@ -1,0 +1,38 @@
+body {
+  padding: 20px;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.box {
+  display: block;
+  width: 100%;
+  color: #333;
+  text-decoration: none;
+}
+.box__ttl {
+  font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.box__img img {
+  width: 100%;
+  height: 100px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  object-fit: contain;
+}
+.box__desc {
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
