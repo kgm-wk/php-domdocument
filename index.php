@@ -14,7 +14,7 @@
       $dotenv->load();
 
       require("./class/Scraping.php");
-      require("./class/FromCSV.php");
+      require("./class/ReadCSV.php");
       require("./class/WriteCSV.php");
       require("./class/LocalDB.php");
       require("./class/CSVManager.php");
@@ -24,8 +24,8 @@
       $scraping = new Scraping($writer);
       $db = new LocalDB($_ENV['DB'], $_ENV['TABLE']);
       $scraping->pageElementToCSV($db->getArray($_ENV['ROW']));
-      $fromcsv = new FromCSV($csv);
-      $records = $fromcsv->get();
+      $readcsv = new ReadCSV($csv);
+      $records = $readcsv->get();
     ?>
 
     <div class="wrap">

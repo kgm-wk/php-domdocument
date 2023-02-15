@@ -1,5 +1,5 @@
 <?php
-class FromCSV {
+class ReadCSV {
   private $csv;
 
   public function __construct(CSVManager $csv) {
